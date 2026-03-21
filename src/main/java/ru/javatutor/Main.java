@@ -1,6 +1,7 @@
 package ru.javatutor;
 
 import ru.javatutor.classes.Person;
+
 import java.util.Arrays;
 
 public class Main {
@@ -18,11 +19,14 @@ public class Main {
 
         Person[] cloned = people.clone();
 
+        // значение в первом массиве
+        System.out.println(people[0].name); // Anna
+
         // изменим значение одного объекта во втором массиве
-        cloned[0].name = "Olga";
+        cloned[0].name = "Alex";
 
         // это отразится на первом массиве
-        System.out.println(people[0].name); // Olga
+        System.out.println(people[0].name); // Alex
 
     }
 
@@ -41,9 +45,11 @@ public class Main {
         return res;
     }
 
-    public int[] removeLastElement(int[] arr) {
-        return Arrays.copyOf(arr, arr.length - 1);
-    }
+public int[] removeLastElement(int[] arr) {
+    if (arr == null || arr.length == 0)
+        return arr;
+    return Arrays.copyOf(arr, arr.length - 1);
+}
 
 
 }

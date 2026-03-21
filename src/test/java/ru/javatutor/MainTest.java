@@ -31,5 +31,24 @@ class MainTest {
         assertArrayEquals(new Integer[]{1, 3, 4, 5}, res);
     }
 
+    @Test
+    void removeLastElement_SeveralElements() {
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] res = main.removeLastElement(arr);
+        assertArrayEquals(new int[]{1, 2, 3, 4}, res);
+    }
 
+    @Test
+    void removeLastElement_OneElement() {
+        int[] arr = {1};
+        int[] res = main.removeLastElement(arr);
+        assertArrayEquals(new int[]{}, res);
+    }
+
+    @Test
+    void removeLastElement_EmptyArray() {
+        int[] arr = {};
+        int[] res = main.removeLastElement(arr);
+        assertArrayEquals(new int[]{}, res);
+    }
 }
