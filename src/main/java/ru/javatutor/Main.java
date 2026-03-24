@@ -45,11 +45,11 @@ public class Main {
         return res;
     }
 
-public int[] removeLastElement(int[] arr) {
-    if (arr == null || arr.length == 0)
-        return arr;
-    return Arrays.copyOf(arr, arr.length - 1);
-}
+    public int[] removeLastElement(int[] arr) {
+        if (arr == null || arr.length == 0)
+            return arr;
+        return Arrays.copyOf(arr, arr.length - 1);
+    }
 
 
 }
