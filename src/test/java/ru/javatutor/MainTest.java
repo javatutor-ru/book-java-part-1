@@ -32,6 +32,20 @@ class MainTest {
     }
 
     @Test
+    void remove_emptyArray() {
+        Integer[] arr = {};
+        Integer[] res = main.remove(arr, 1);
+        assertArrayEquals(new Integer[]{}, res);
+    }
+
+    @Test
+    void remove_invalidIndex() {
+        Integer[] arr = {1, 2, 3};
+        Integer[] res = main.remove(arr, -1);
+        assertArrayEquals(new Integer[]{1, 2, 3}, res);
+    }
+
+    @Test
     void removeLastElement_severalElementsInArray() {
         int[] arr = {1, 2, 3, 4, 5};
         int[] res = main.removeLastElement(arr);
