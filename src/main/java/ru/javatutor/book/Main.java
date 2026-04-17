@@ -1,10 +1,11 @@
-package ru.javatutor;
+package ru.javatutor.book;
 
-import ru.javatutor.classes.Person;
+import ru.javatutor.book.classes.Person;
 
 import java.util.Arrays;
 
 public class Main {
+
     public static void main(String[] args) {
 
         // Пример Arrays.toString()

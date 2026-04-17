@@ -1,4 +1,4 @@
-package ru.javatutor;
+package ru.javatutor.book;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

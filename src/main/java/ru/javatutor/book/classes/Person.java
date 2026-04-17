@@ -1,4 +1,4 @@
-package ru.javatutor.classes;
+package ru.javatutor.book.classes;
 
 public class Person {
     // поля класса

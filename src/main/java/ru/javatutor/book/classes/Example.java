@@ -1,4 +1,4 @@
-package ru.javatutor.classes;
+package ru.javatutor.book.classes;
 
 public class Example {
     public static Integer number;
