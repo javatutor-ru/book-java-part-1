@@ -9,7 +9,4 @@ public class Example {
         logger.info("Run main() in Example");
     }
 
-   public void print() {
-       System.out.println("Example");
-   }
 }
