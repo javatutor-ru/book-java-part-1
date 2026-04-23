@@ -24,7 +24,7 @@ public class Main {
         System.out.println(people[0].name); // Anna
 
         // изменим значение одного объекта во втором массиве
-        cloned[0].name = "Alex";
+        cloned[0].name = "Alexander";
 
         // это отразится на первом массиве
         System.out.println(people[0].name); // Alex
